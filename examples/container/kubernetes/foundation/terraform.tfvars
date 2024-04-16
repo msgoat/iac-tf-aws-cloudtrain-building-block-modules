@@ -1,4 +1,4 @@
-region_name="eu-central-1"
+region_name="eu-north-1"
 solution_name="iactrain"
 solution_stage="dev"
 solution_fqn="iactrain-dev"
@@ -22,6 +22,6 @@ node_group_templates=[
     disk_size          = 64       # size of attached root volume in GB
     capacity_type      = "SPOT"   # defines the purchasing option for the virtual machine instances in all node groups
     instance_types     = [ "t4g.xlarge" ] # virtual machine instance types which should be used for the worker node groups ordered descending by preference
-    image_type         = "AL2_ARM_64"
+    image_type         = "ARM_64"
   }
 ]

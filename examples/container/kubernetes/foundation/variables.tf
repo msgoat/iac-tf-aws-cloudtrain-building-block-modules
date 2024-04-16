@@ -73,6 +73,6 @@ variable "node_group_templates" {
       value  = string
       effect = string
     })), []) # Kubernetes taints to be attached to each worker node
-    image_type         = optional(string, "AL2_x86_64") # Type of OS images to be used for EC2 instances; possible values are: AL2_x86_64 | AL2_x86_64_GPU | AL2_ARM_64 | CUSTOM | BOTTLEROCKET_ARM_64 | BOTTLEROCKET_x86_64 | BOTTLEROCKET_ARM_64_NVIDIA | BOTTLEROCKET_x86_64_NVIDIA; default is "AL2_x86_64"
+    image_type         = optional(string, "X86_64") # Type of OS images to be used for EC2 instances; possible values are: X86_64 | ARM_64; default is "X86_64"
   }))
 }

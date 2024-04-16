@@ -1,4 +1,4 @@
-# iac-tf-aws-cloudtrain-building-blocks Terraform Building Blocks for AWS
+# Terraform Building Block Modules for AWS
 
 Terraform module library which provides coarse-grained cloud infrastructure building blocks for AWS.
 

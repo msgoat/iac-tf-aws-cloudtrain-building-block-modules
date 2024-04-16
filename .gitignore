@@ -48,7 +48,6 @@ target/
 
 # Terraform execution artifacts
 **/.terraform/
-examples/**/.terraform.*
 *.tfstate
 *.tfstate.backup
 **/tf.plan
