@@ -79,3 +79,11 @@ variable "opentelemetry_collector_port" {
   type        = number
 }
 
+variable "kubernetes_namespace_templates" {
+  description = "Templates for the Kubernetes namespaces to create"
+  type = list(object({
+    name                    = string
+    labels                  = optional(map(string), {})
+    network_policy_enforced = optional(bool, false)
+  }))
+}

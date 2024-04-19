@@ -71,3 +71,14 @@ module "k8s_tools" {
   jaeger_path                        = "/jaeger"
   depends_on                         = [module.k8s_addons]
 }
+
+module "k8s_namespaces" {
+  source                             = "../../../../../iac-tf-aws-cloudtrain-modules//modules/container/eks/namespaces"
+  region_name                        = var.region_name
+  solution_name                      = var.solution_name
+  solution_stage                     = var.solution_stage
+  solution_fqn                       = var.solution_fqn
+  common_tags                        = local.module_common_tags
+  eks_cluster_id                     = var.k8s_cluster_id
+  kubernetes_namespace_templates     = var.kubernetes_namespace_templates
+}
